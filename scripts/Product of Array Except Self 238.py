@@ -22,5 +22,4 @@ def arrayOfProducts(array):
         outputList.append(product)
     return outputList
 
-
 arrayOfProducts([1,2,3,4])
