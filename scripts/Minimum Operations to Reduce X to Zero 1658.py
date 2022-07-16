@@ -31,4 +31,5 @@ def minOperations(nums, x):
     else:
         return minimum
     
+    
 minOperations(nums, x)
