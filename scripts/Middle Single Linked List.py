@@ -3,6 +3,7 @@ class Node:
         self.value = value 
         self.next = next
         
+        
 def middle_linked_list(node):
     slow = node 
     fast = node 
