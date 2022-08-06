@@ -1,3 +1,5 @@
+# Given a list of intervals representing the start and end time of ‘N’ meetings, find the minimum number of rooms required to hold all the meetings.
+
 from heapq import *
 
 class Solution(object):
