@@ -38,8 +38,7 @@ def rearrange(head):
         second_half_reversed.next = first_half
         second_half_reversed = temp 
 
-    if first_half is not None:
-        first_half.next = None
+    first_half.next = None
 
 head = Node(1)
 head.next = Node(2)
