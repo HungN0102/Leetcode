@@ -5,16 +5,15 @@ def solution(number):
     maxCount = 0
     
     i = 0
-    if i <= len(binary) - 1 and binary[i] == '1' and binary[i+1] == '0':
+    while i <= len(binary) - 1:
         count = 0
-        while i + 1<= len(binary) - 1 and binary[i+1] == '0':
-            count += 1
-            i += 1
-        if i + 1 <= len(binary) - 1 and binary[i+1] == '1':
-            maxCount = max(maxCount, count)
-            i += 1
-    else:
+        if binary[i] == '1':
+            while i + 1 <= len(binary) - 1 and binary[i+1] == '0':
+                count += 1
+                i += 1
         i += 1
+        if i <= len(binary) - 1 and binary[i] =='1':
+            maxCount = max(maxCount, count)
     return maxCount
-
-solution(32)
+    
+solution(1162)
