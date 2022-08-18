@@ -1,5 +1,5 @@
 # Given a set with distinct elements, find all of its distinct subsets.
-nums = [1, 5, 3]
+nums = [1, 3, 3]
 def solution(nums):
     subsets = []
     subsets.append([])
