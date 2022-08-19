@@ -16,3 +16,6 @@ def solution(nums, target):
             end = middle - 1
         middle = int((end+start)/2)
     return middle
+
+
+int(2.5)
