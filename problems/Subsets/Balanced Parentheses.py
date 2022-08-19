@@ -1,5 +1,4 @@
 # For a given number ‘N’, write a function to generate all combination of ‘N’ pairs of balanced parentheses.
-
 class parentheses:
     def __init__(self, form, open, end):
         self.form = form
