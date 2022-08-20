@@ -12,4 +12,10 @@ def solution(nums, k):
         heappush(maxHeap, -nums[i])
         
     for i in range(k, len(nums)):
-        if -nums[i] < 
+        if nums[i] < -maxHeap[0]:
+            heappop(maxHeap)
+            heappush(maxHeap, -nums[i])
+            
+    return -maxHeap[0]
+
+solution(nums, k)
