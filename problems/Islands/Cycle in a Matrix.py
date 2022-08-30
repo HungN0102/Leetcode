@@ -42,3 +42,4 @@ def isCircleDFS(board, visited, startChar, r, c, rOld, cOld):
     hasCircle |= (c-1 != cOld and isCircleDFS(board, visited, startChar, r, c-1, r, c))
 
     return hasCircle
+isCircle(board)
