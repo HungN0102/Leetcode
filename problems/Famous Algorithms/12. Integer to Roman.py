@@ -28,5 +28,4 @@ def intToRoman(number):
                 break 
             
     return stringOutput
-
 intToRoman(58)
