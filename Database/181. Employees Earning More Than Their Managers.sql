@@ -1,5 +1,4 @@
 # Write your MySQL query statement below
-
 SELECT e1.name Employee
     FROM employee e1
     LEFT JOIN employee e2 
