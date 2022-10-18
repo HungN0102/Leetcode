@@ -1,12 +1,16 @@
-    def canJump(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        dp = [False for _ in range(len(nums))]
-        dp[0] = True
-        
-        for index in range(len(nums)):
-            if index == True:
-                for addMe in range(1, nums[index]):
-                    dp[index+addMe] = True
+def climbStairs(n):
+    return solveDP(n, {})
+
+def solveDP(n, memo):
+    if n in memo:
+        return memo[n]
+    if n < 0:
+        return 0
+    if n == 0:
+        return 1
+
+    memo[n] = solveDP(n-1, memo) + solveDP(n-2, memo)
+    
+    return memo[n]
+
+climbStairs(8)
